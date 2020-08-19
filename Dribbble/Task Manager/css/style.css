@@ -1,0 +1,60 @@
+:root{
+    --app-border:.5px solid #E3E2EC;
+}
+.app-borders{
+    border : var(--app-border);
+}
+.app-head{
+    height: 10vh;
+}
+.app-body{
+    height: 90vh;
+}
+.email-category, .email-actions{
+    height: 10vh;
+}
+.test{
+    background-color: gray;
+}
+
+.logo{
+    border-right: var(--app-border);
+}
+
+.email-category, .email-actions, .email-body, .email-reply, .nav-head, .logo,.email-list{
+    border-bottom: var(--app-border);
+}
+
+.profile, .email-summary{
+    border-right: var(--app-border);
+}
+
+.profile-projects, .profile-team{
+    border-top: var(--app-border);
+}
+.logo{
+    -webkit-box-shadow: 5px 0px 13px 0px rgba(245,245,245,1);
+-moz-box-shadow: 5px 0px 13px 0px rgba(245,245,245,1);
+box-shadow: 5px 0px 13px 0px rgba(245,245,245,1);
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+letter-spacing: 1px;
+}
+
+body,html{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300;
+}
+
+.email-category-col{
+    border-left: 5px solid #B86EF8;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.profile-pic{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+}
