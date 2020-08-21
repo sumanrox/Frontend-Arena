@@ -20,18 +20,10 @@
     --app-inactive-background : #FFFFFF;
     --app-icon-wrapper-size : 2em;
 
-    --opacity-level-1  : 10%;
-    --opacity-level-2  : 20%;
-    --opacity-level-3  : 30%;
-    --opacity-level-4  : 40%;
-    --opacity-level-5  : 50%;
-    --opacity-level-6  : 60%;
-    --opacity-level-7  : 70%;
-    --opacity-level-8  : 80%;
-    --opacity-level-9  : 90%;
-    --opacity-level-10 : 100%;
+    --opacity-level  : 100%;
 
     --app-profile-pic-size-optional : 2.2em;
+    --app-animation-transition : .3s;
 }
 
 *{
@@ -39,6 +31,7 @@
     font-family: var(--app-font-family);
     font-weight: var(--app-default-font-weight);
     border-radius: var(--app-border-radius);
+    transition: var(--app-animation-transition);
 }
 .test{
     background-color: (var(--app-layout-test))
@@ -84,35 +77,36 @@
     height: 6px;
 }
 
+
 .op-level-1{
-    opacity: var(--opacity-level-1);
+    opacity: calc(var(--opacity-level)+10%);
 }
 .op-level-2{
-    opacity: var(--opacity-level-2);
+    opacity: calc(var(--opacity-level)+20%);
 }
 .op-level-3{
-    opacity: var(--opacity-level-3);
+    opacity: calc(var(--opacity-level)+30%);
 }
 .op-level-4{
-    opacity: var(--opacity-level-4);
+    opacity: calc(var(--opacity-level)+40%);
 }
 .op-level-5{
-    opacity: var(--opacity-level-5);
+    opacity: calc(var(--opacity-level)+50%);
 }
 .op-level-6{
-    opacity: var(--opacity-level-6);
+    opacity: calc(var(--opacity-level)+60%);
 }
 .op-level-7{
-    opacity: var(--opacity-level-7);
+    opacity: calc(var(--opacity-level)+70%);
 }
 .op-level-8{
-    opacity: var(--opacity-level-8);
+    opacity: calc(var(--opacity-level)+80%);
 }
 .op-level-9{
-    opacity: var(--opacity-level-9);
+    opacity: calc(var(--opacity-level)+90%);
 }
 .op-level-10{
-    opacity: var(--opacity-level-10);
+    opacity: calc(var(--opacity-level));
 }
 
 .border-top{
