@@ -1,0 +1,134 @@
+:root{
+    --app-border-radius : 0;
+    --app-border : .5px solid #F1F0F3;
+    --app-layout-test : gray;
+    --app-profile-pic-size : 70px;
+    --app-accent-color : #4E78FE;
+    --app-font-family : 'Poppins';
+    --app-default-font-weight : 300;
+    --app-primary-font-size : 1em;
+
+    --app-secondary-font-weight : 500;
+    --app-secondary-font-size : 11px;
+    --app-secondary-font-opacity : 50%;
+    
+    --app-small-font-size : 10px;
+    --app-small-font-weight : 500;
+    --app-small-font-opacity : 30%;
+
+    --app-active-background : #F1F2F7;
+    --app-inactive-background : #FFFFFF;
+    --app-icon-wrapper-size : 2em;
+
+    --opacity-level-1  : 10%;
+    --opacity-level-2  : 20%;
+    --opacity-level-3  : 30%;
+    --opacity-level-4  : 40%;
+    --opacity-level-5  : 50%;
+    --opacity-level-6  : 60%;
+    --opacity-level-7  : 70%;
+    --opacity-level-8  : 80%;
+    --opacity-level-9  : 90%;
+    --opacity-level-10 : 100%;
+
+    --app-profile-pic-size-optional : 2.2em;
+}
+
+*{
+    border: none !important;
+    font-family: var(--app-font-family);
+    font-weight: var(--app-default-font-weight);
+    border-radius: var(--app-border-radius);
+}
+.test{
+    background-color: (var(--app-layout-test))
+}
+
+.user-profile-pic{
+    height: var(--app-profile-pic-size);
+    width: var(--app-profile-pic-size);
+    object-fit: cover;
+}
+.user-profile-pic-size{
+    height: var(--app-profile-pic-size-optional);
+    width: var(--app-profile-pic-size-optional);
+}
+
+.primary-text{
+    font-weight: var(--app-secondary-font-weight);
+    font-size: var(--app-primary-font-size);
+    letter-spacing: 1px;
+}
+.secondary-text{
+    font-weight: var(--app-secondary-font-weight);
+    font-size: var(--app-secondary-font-size);
+    opacity: var(--app-secondary-font-opacity);
+}
+
+.small-text{
+    font-size: var(--app-small-font-size);
+    font-weight: var(--app-small-font-weight);
+    opacity: var(--app-small-font-opacity);
+}
+
+.icon-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--app-active-background);
+    height: var(--app-icon-wrapper-size);
+    width: var(--app-icon-wrapper-size);
+}
+
+.progress{
+    height: 6px;
+}
+
+.op-level-1{
+    opacity: var(--opacity-level-1);
+}
+.op-level-2{
+    opacity: var(--opacity-level-2);
+}
+.op-level-3{
+    opacity: var(--opacity-level-3);
+}
+.op-level-4{
+    opacity: var(--opacity-level-4);
+}
+.op-level-5{
+    opacity: var(--opacity-level-5);
+}
+.op-level-6{
+    opacity: var(--opacity-level-6);
+}
+.op-level-7{
+    opacity: var(--opacity-level-7);
+}
+.op-level-8{
+    opacity: var(--opacity-level-8);
+}
+.op-level-9{
+    opacity: var(--opacity-level-9);
+}
+.op-level-10{
+    opacity: var(--opacity-level-10);
+}
+
+.border-top{
+    border-top: var(--app-border);
+}
+.border-right{
+    border-right: var(--app-border);
+}
+.border-bottom{
+    border-bottom: var(--app-border);
+}
+.border-left{
+    border-left: var(--app-border);
+}
+
+
+.card-header, .card-footer{
+    background-color: transparent;
+}

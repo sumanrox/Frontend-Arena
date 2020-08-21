@@ -6,80 +6,92 @@
     <title>Task Manager</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/height.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="app-head">
-        <!--Head-->
-        <div class="row h-100 m-0">
-            <div class="col-3 h-100 logo  text-uppercase text-center d-flex justify-content-center align-items-center">
-                Task Manager
-            </div>
-            <div class="col-9 nav-head">
-                <div class="row h-100 align-items-center">
-                    <div class="col h-100 d-flex justify-content-start align-items-center">
-                        Search
-                    </div>
-                    <div class="col h-100 text-center d-flex justify-content-center align-items-center">
-                        All Task
-                    </div>
-                    <div class="col h-100 text-right d-flex justify-content-end align-items-center">
-                        Menu
+    <div class="container">
+        <div class="row">
+            <section class="col-3 border-right">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p class="text-uppercase primary-text m-0">task manager</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Head-->
-        <div class="app-body row m-0">
-
-
-            <!--Profile Details-->
-            <div class="col-3 profile">
-                <div class="row h-50 profile-summary"></div>
-                <div class="row h-25 profile-projects"></div>
-                <div class="row h-25 profile-team"></div>
-            </div>
-
-
-            <!--Email Section-->
-            <div class="col-4 email-summary">
-                <div class="row email-category">
-                    <div class="col d-flex justify-content-start align-items-center email-category-col">
-                        <h6 class="text-uppercase mt-2" style="font-weight: 500; font-size:14px">marketing</h6>
+                <div class="card">
+                    <div class="card-header d-flex flex-column justify-content-center align-items-center">
+                        <img class="img-fluid rounded-circle user-profile-pic" src="https://source.unsplash.com/W7b3eDUb_2I">
+                        <p class="primary-text m-0 mt-3">Natalie Smith</p>
+                        <p class="secondary-text m-0">natalie.smith@gmail.com</p>
                     </div>
-                    <div class="col d-flex justify-content-end align-items-center">
-                        <img class="mt-1 mr-3" src="./node_modules/bootstrap-icons/icons/chevron-down.svg" alt="">
+                    <div class="card-body d-flex justify-content-around align-items-between">
+                        <div class="icon-wrapper rounded-circle ml-4">
+                            <img src="./node_modules/bootstrap-icons/icons/gear.svg" alt="settings">
+                        </div>
+                        <div class="icon-wrapper rounded-circle">
+                            <img src="./node_modules/bootstrap-icons/icons/envelope.svg" alt="messages">
+                        </div>
+                        <div class="icon-wrapper rounded-circle mr-4">
+                            <img src="./node_modules/bootstrap-icons/icons/bell.svg" alt="notification">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3 d-flex justify-content-around align-items-center">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center p-0">
+                                    <p class="primary-text m-0">12</p>
+                                    <p class="secondary-text m-0 op-level-8">Completed</p>
+                                    <p class="small-text m-0">tasks</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center p-0">
+                                    <p class="primary-text m-0">22</p>
+                                    <p class="secondary-text m-0 op-level-8">To Do</p>
+                                    <p class="small-text m-0">tasks</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body d-flex flex-column justify-content-center align-items-center p-0">
+                                    <p class="primary-text m-0">243</p>
+                                    <p class="secondary-text m-0 op-level-8">All</p>
+                                    <p class="small-text m-0">tasks</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row email-list h-15">
-                    <div class="col-2 d-flex justify-content-center align-items-center">
-                        <img class="icon" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
+                <div class="card mt-2 border-top">
+                    <div class="card-body">
+                        <p class="primary-text text-uppercase">projects</p>
+                        <ul class="list-group">
+                            <li class="list-group-item p-0 m-0 mb-2 secondary-text op-level-8">Marketing</li>
+                            <li class="list-group-item p-0 m-0 mb-2 secondary-text op-level-8">Design</li>
+                            <li class="list-group-item p-0 m-0 mb-2 secondary-text op-level-8">Management</li>
+                            <li class="list-group-item p-0 m-0 secondary-text op-level-8">Development</li>
+                        </ul>
                     </div>
-                    <div class="col-7 d-flex flex-column justify-content-center align-items-start">
-                        <p class="lead mt-3" style="font-size:13px; font-weight: 500;">Create AdWords campaings
-                        </br>
-                            <span class="" style="font-size: 12px; opacity : 50%">22 Feb, 2018</span>
-                        </p>
-                    </div>
-                    <div class="col-3 d-flex justify-content-end align-items-center">
-                        <img class="profile-pic rounded-circle mr-2" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                    <div class="card-footer border-top">
+                        <p class="primary-text text-uppercase">Team</p>
+                        <ul class="list-group flex-row">
+                            <li class="list-group-item p-0 mr-3"><img src="https://source.unsplash.com/W7b3eDUb_2I" class="rounded-circle user-profile-pic user-profile-pic-size"  alt=""></li>
+                            <li class="list-group-item p-0 mr-3"><img src="https://source.unsplash.com/rDEOVtE7vOs" class="rounded-circle user-profile-pic user-profile-pic-size"  alt=""></li>
+                            <li class="list-group-item p-0 mr-3"><img src="https://source.unsplash.com/iFgRcqHznqg" class="rounded-circle user-profile-pic user-profile-pic-size"  alt=""></li>
+                            <li class="list-group-item p-0 "><img src="https://source.unsplash.com/-Ir03_pgpMU" class="rounded-circle user-profile-pic user-profile-pic-size"  alt=""></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="col-5 email-content">
-                <div class="row email-actions">
-                    <div class="col justify-content-start"></div>
-                    <div class="col justify-content-end"></div>
-                </div>
-                <div class="row email-body h-75"></div>
-                <div class="row email-reply" style="height: 12.5vh;"></div>
-            </div>
-
+            </section>
+            <div class="col-9"></div>
         </div>
     </div>
+
+
+
+
+
 
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

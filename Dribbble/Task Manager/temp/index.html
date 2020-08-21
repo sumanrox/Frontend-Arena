@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/height.css">
+</head>
+<body>
+    <div class="app-head fixed-top">
+        <!--Head-->
+        <div class="row h-100 m-0">
+            <div class="col-3 h-100 logo  text-uppercase text-center d-flex justify-content-center align-items-center">
+                Task Manager
+            </div>
+            <div class="col-9 nav-head">
+                <div class="row h-100 align-items-center">
+                    <div class="col h-100 d-flex justify-content-start align-items-center">
+                        Search
+                    </div>
+                    <div class="col h-100 text-center d-flex justify-content-center align-items-center">
+                        All Task
+                    </div>
+                    <div class="col h-100 text-right d-flex justify-content-end align-items-center">
+                        Menu
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Head-->
+        <div class="app-body row m-0">
+
+
+            <!--Profile Details-->
+            <div class="col-3 profile">
+            <div class="row h-75 profile-summary d-flex flex-column justify-content-center align-items-center">
+                
+                <img class="rounded-circle img-fluid profile-pic-user" src="https://images.unsplash.com/photo-1559637621-d766677659e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                <p class="profile-username mt-4">Natalie Smith</p>
+                <p class="profile-email">natalie.smith@gmail.com</p>
+                <div class="row d-flex justify-content-between align-items-center mt-2 w-50">
+                    <div class="rounded-circle icon-outer-circle">
+                        <img src="./node_modules/bootstrap-icons/icons/gear-fill.svg" class="img-fluid profile-icons m-2" alt="">
+                    </div>
+                    <div class="rounded-circle icon-outer-circle">
+                        <img src="./node_modules/bootstrap-icons/icons/envelope-fill.svg" class="img-fluid profile-icons m-2" alt="">
+                    </div>
+                    <div class="rounded-circle icon-outer-circle">
+                        <img src="./node_modules/bootstrap-icons/icons/bell-fill.svg" class="img-fluid profile-icons m-2" alt="">
+                    </div>
+                </div>
+
+                <div class="profile-progress row w-100 mt-5 d-flex flex-column justify-content-center">
+                    <div class="progress w-75 align-self-center">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="row d-flex m-0 justify-content-center align-items-center">
+                          <div class="col d-flex mt-3  flex-column justify-content-center align-items-center">
+                              <h4>12</h4>
+                              <p class="lead">Completed
+                                  <p class="sub-lead">tasks</p>
+                              </p>
+                          </div>
+                          <div class="col d-flex mt-3  flex-column justify-content-center align-items-center">
+                              <h4>22</h4>
+                              <p class="lead">To do
+                                  <p class="sub-lead">tasks</p>
+                              </p>
+                          </div>
+                          <div class="col d-flex mt-3  flex-column justify-content-center align-items-center">
+                              <h4>243</h4>
+                              <p class="lead">All
+                                  <p class="sub-lead">task</p>
+                              </p>
+                          </div>
+                      </div>
+                </div>
+            
+            </div>
+                <div class="row h-10 profile-projects"></div>
+                <div class="row h-15 profile-team"></div>
+            </div>
+
+
+            <!--Email Section-->
+            <div class="col-4 email-summary">
+                <div class="row email-category">
+                    <div class="col d-flex justify-content-start align-items-center email-category-col">
+                        <h6 class="text-uppercase mt-2" style="font-weight: 500; font-size:14px">marketing</h6>
+                    </div>
+                    <div class="col d-flex justify-content-end align-items-center">
+                        <img class="mt-1 mr-3" src="./node_modules/bootstrap-icons/icons/chevron-down.svg" alt="">
+                    </div>
+                </div>
+                <div class="row email-list h-15">
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <img class="icon" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
+                    </div>
+                    <div class="col-7 d-flex flex-column justify-content-center align-items-start">
+                        <p class="lead mt-3" style="font-size:13px; font-weight: 500;">Create AdWords campaings
+                        </br>
+                            <span class="" style="font-size: 12px; opacity : 50%">22 Feb, 2018</span>
+                        </p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <img class="profile-pic-others img-fluid rounded-circle mr-2" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-5 email-content">
+                <div class="row email-actions">
+                    <div class="col justify-content-start"></div>
+                    <div class="col justify-content-end"></div>
+                </div>
+                <div class="row email-body h-75"></div>
+                <div class="row email-reply" style="height: 12.5vh;"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

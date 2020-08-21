@@ -1,6 +1,9 @@
 :root{
     --app-border:.5px solid #E3E2EC;
 }
+*{
+    transition: .3s;
+}
 .app-borders{
     border : var(--app-border);
 }
@@ -53,8 +56,48 @@ body,html{
     height: 30px;
     width: 30px;
 }
-.profile-pic{
+.profile-pic-user{
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
+.profile-pic-others{
     height: 45px;
     width: 45px;
     object-fit: cover;
+}
+.email-list:hover{
+    background-color: #eeeeee;
+}
+.profile-email{
+    font-size:12px;
+    margin-top: -15px;
+    opacity: 50%;
+}
+.profile-username{
+    font-size: 15px;
+    font-weight: 500;
+}
+.profile-icons{
+    height: 15px;
+}
+.profile-progress .lead{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 50%;
+}
+.profile-progress h4{
+    font-size: 14px;
+}
+.sub-lead{
+    font-size: 10px;
+    opacity: 35%;
+    margin-top: -15px;
+}
+.progress{
+    height: 6px;
+}
+
+.icon-outer-circle{
+    background-color: #F1F2F7;
 }
