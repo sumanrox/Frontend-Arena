@@ -24,6 +24,11 @@
 
     --app-profile-pic-size-optional : 2.2em;
     --app-animation-transition : .3s;
+
+    --app-icon-size : 2em;
+
+    --app-task-category-color-marketing : #B86EF4; 
+    --app-border-none : none;
 }
 
 *{
@@ -34,7 +39,11 @@
     transition: var(--app-animation-transition);
 }
 .test{
-    background-color: (var(--app-layout-test))
+    background-color: var(--app-layout-test);
+}
+
+.component-border{
+    border: var(--app-border) !important;
 }
 
 .user-profile-pic{
@@ -73,6 +82,11 @@
     width: var(--app-icon-wrapper-size);
 }
 
+.icon-size{
+    height: var(--app-icon-size);
+    width: var(--app-icon-size);
+}
+
 .progress{
     height: 6px;
 }
@@ -109,6 +123,7 @@
     opacity: calc(var(--opacity-level));
 }
 
+
 .border-top{
     border-top: var(--app-border);
 }
@@ -121,8 +136,25 @@
 .border-left{
     border-left: var(--app-border);
 }
+.border-top-none{
+    border-top: var(--app-border-none) !important;
+}
+.border-right-none{
+    border-right: var(--app-border-none) !important;
+}
+.border-bottom-none{
+    border-bottom: var(--app-border-none) !important;
+}
+.border-left-none{
+    border-left: var(--app-border-none) !important;
+}
+
 
 
 .card-header, .card-footer{
     background-color: transparent;
+}
+
+.task-category-marketing{
+    border-left: 5px solid var(--app-task-category-color-marketing) !important;
 }

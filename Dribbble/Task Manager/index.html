@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/height.css">
 </head>
 <body>
     <div class="container">
@@ -14,7 +15,7 @@
             <section class="col-3 border-right">
                 <div class="card">
                     <div class="card-body text-center">
-                        <p class="text-uppercase primary-text m-0">task manager</p>
+                        <p class="text-uppercase primary-text m-0 op-level-5">task manager</p>
                     </div>
                 </div>
                 <div class="card">
@@ -85,8 +86,59 @@
                     </div>
                 </div>
             </section>
-            <section class="col-9">
-                
+            <section class="col-9 border-right">
+                <div class="row d-flex px-3 h-10 justify-content-between align-items-center">
+                    <div class="search d-flex align-items-center">
+                        <img class="img-fluid op-level-7" src="./node_modules/bootstrap-icons/icons/search.svg" alt="">
+                        <p class="secondary-text m-2 ml-4 op-level-7">
+                            Search...
+                        </p>
+                    </div>
+                    <div class="dropdown">
+                        <p class="primary-text m-3">All task<img class="img-fluid ml-2" src="/node_modules/bootstrap-icons/icons/chevron-down.svg" alt=""></p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img class="img-fluid icon-size mt-2" src="/node_modules/bootstrap-icons/icons/three-dots.svg">
+                    </div>
+                </div>
+                <div class="row  component-border border-left-none border-right-none">
+                    <div class="col-5 task-category-marketing text-center d-flex justify-content-between align-items-center">
+                        <p class="primary-text my-2 text-uppercase">Marketing</p>
+                        <img class="" src="./node_modules/bootstrap-icons/icons/chevron-down.svg" alt="">
+                    </div>
+                    <div class="col-7 border-left text-center d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid rounded-circle user-profile-pic user-profile-pic-size" src="https://source.unsplash.com/W7b3eDUb_2I">
+                            <p class="primary-text m-2 small-text op-level-8 py-3">Natalie Smith</p>
+                        </div>
+                        <div class="actions d-flex justify-content-between">
+                            <div class="icon-wrapper rounded-circle">
+                                <img class="img-fluid" src="./node_modules/bootstrap-icons/icons/trash.svg" alt="">
+                            </div>
+                            <div class="icon-wrapper rounded-circle ml-3">
+                                <img src="./node_modules/bootstrap-icons/icons/person.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="icon-wrapper rounded-circle ml-3">
+                                <img src="./node_modules/bootstrap-icons/icons/tag.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="icon-wrapper rounded-circle ml-3">
+                                <img src="./node_modules/bootstrap-icons/icons/check-circle.svg" alt="">
+                            </div>
+                            <div class="icon-wrapper rounded-circle ml-3">
+                                <img src="./node_modules/bootstrap-icons/icons/paperclip.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <task-item></task-item>
+                        <task-item></task-item>
+                    </div>
+                    <div class="col-7 border-left">
+
+                    </div>
+                </div>
             </section>
         </div>
     </div>
@@ -100,5 +152,7 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./js/task-item.js"></script>
 </body>
 </html>
