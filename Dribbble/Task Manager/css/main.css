@@ -168,9 +168,14 @@
 }
 
 .btn-primary{
-    background-color: var(--app-button-primary);
-    border: var(--app-border);
+    background-color: var(--app-active-background);
+    border: 2px solid black !important;
     border-radius: var(--app-border-radius);
+    color: black;
+}
+.btn-primary:hover{
+    background-color: #FF5733 !important;
+    color: white !important;
 }
 
 /* width */
