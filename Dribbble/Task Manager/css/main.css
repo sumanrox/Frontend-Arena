@@ -22,8 +22,8 @@
 
     --opacity-level  : 100%;
 
-    --app-profile-pic-size-optional : 2.2em;
-    --app-animation-transition : .3s;
+    --app-profile-pic-size-optional : 2.3em;
+    --app-animation-transition : .4s;
 
     --app-icon-size : 2em;
 
@@ -133,16 +133,16 @@
 
 
 .border-top{
-    border-top: var(--app-border);
+    border-top: var(--app-border) !important;
 }
 .border-right{
-    border-right: var(--app-border);
+    border-right: var(--app-border) !important;
 }
 .border-bottom{
-    border-bottom: var(--app-border);
+    border-bottom: var(--app-border) !important;
 }
 .border-left{
-    border-left: var(--app-border);
+    border-left: var(--app-border) !important;
 }
 .border-top-none{
     border-top: var(--app-border-none) !important;
@@ -194,3 +194,20 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--app-scrollbar-thumb-hover); 
   }
+
+.task-item-animation:hover{
+    background-color: var(--app-active-background);
+    padding-bottom: 1em;
+}
+
+.task-item-animation:hover #items{
+    margin-top: 2em;
+}
+.task-item-animation #action-panel{
+    display: none;
+}
+.task-item-animation:hover #action-panel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
