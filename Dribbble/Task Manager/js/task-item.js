@@ -2,9 +2,9 @@ class taskitem extends HTMLElement{
     constructor(){
         super();
         this.innerHTML=`
-                        <div class="row border-bottom">
+                        <div class="row mx-1 mt-4 border-bottom">
                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                <img class="icon" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
+                                <img class="icon-size" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
                             </div>
                             <div class="col-7 d-flex flex-column justify-content-center align-items-start">
                                 <p class="lead mt-3" style="font-size:13px; font-weight: 500;">Create AdWords campaings

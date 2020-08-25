@@ -29,6 +29,14 @@
 
     --app-task-category-color-marketing : #B86EF4; 
     --app-border-none : none;
+
+    --app-button-primary : #4E78FE;
+
+    --app-scrollbar-width : 5px;
+    --app-scrollbar-track-color : #f1f1f1;
+    --app-scrollbar-thumb-hover : #555;
+    --app-scrollbar-thumb-color : #888;
+    --app-scrollbar-border-radius : 10px;
 }
 
 *{
@@ -158,3 +166,31 @@
 .task-category-marketing{
     border-left: 5px solid var(--app-task-category-color-marketing) !important;
 }
+
+.btn-primary{
+    background-color: var(--app-button-primary);
+    border: var(--app-border);
+    border-radius: var(--app-border-radius);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: var(--app-scrollbar-width);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--app-scrollbar-track-color); 
+    border-radius: var(--app-scrollbar-border-radius);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--app-scrollbar-thumb-color); 
+    border-radius: var(--app-scrollbar-border-radius);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--app-scrollbar-thumb-hover); 
+  }
