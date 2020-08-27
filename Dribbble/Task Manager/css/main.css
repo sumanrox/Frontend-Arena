@@ -25,7 +25,10 @@
     --app-profile-pic-size-optional : 2.3em;
     --app-animation-transition : .4s;
 
-    --app-icon-size : 2em;
+    --app-icon-size-primary : 2em;
+    --app-icon-size-secondary : 1.2em;
+    --app-icon-size-medium : 2.7em;
+    --app-icon-wrapper-size-medium : 3em;
 
     --app-task-category-color-marketing : #B86EF4; 
     --app-border-none : none;
@@ -37,6 +40,8 @@
     --app-scrollbar-thumb-hover : #555;
     --app-scrollbar-thumb-color : #888;
     --app-scrollbar-border-radius : 10px;
+    
+    --app-optional-font-size : 13px; 
 }
 
 *{
@@ -52,6 +57,10 @@
 
 .component-border{
     border: var(--app-border) !important;
+}
+
+.optional-font{
+    font-size: var(--app-optional-font-size);
 }
 
 .user-profile-pic{
@@ -90,9 +99,23 @@
     width: var(--app-icon-wrapper-size);
 }
 
+.icon-wrapper-size-medium {
+    height: var(--app-icon-wrapper-size-medium);
+    width: var(--app-icon-wrapper-size-medium);
+}
+
 .icon-size{
-    height: var(--app-icon-size);
-    width: var(--app-icon-size);
+    height: var(--app-icon-size-primary);
+    width: var(--app-icon-size-primary);
+}
+.icon-size-medium{
+    height: var(--app-icon-size-medium);
+    width: var(--app-icon-size-medium);
+}
+
+.icon-size-secondary{
+    height: var(--app-icon-size-secondary);
+    width: var(--app-icon-size-secondary);
 }
 
 .progress{
