@@ -1,6 +1,6 @@
 :root{
     --app-border-radius : 0;
-    --app-border : .5px solid #F1F0F3;
+    --app-border : .5px solid #D3D5E4;
     --app-layout-test : gray;
     --app-profile-pic-size : 70px;
     --app-accent-color : #4E78FE;
@@ -11,6 +11,8 @@
     --app-secondary-font-weight : 500;
     --app-secondary-font-size : 11px;
     --app-secondary-font-opacity : 50%;
+
+    --app-optional-font-size : 1em;
     
     --app-small-font-size : 10px;
     --app-small-font-weight : 500;
@@ -18,17 +20,18 @@
 
     --app-active-background : #F1F2F7;
     --app-inactive-background : #FFFFFF;
-    --app-icon-wrapper-size : 2em;
-
+    
     --opacity-level  : 100%;
-
+    
     --app-profile-pic-size-optional : 2.3em;
     --app-animation-transition : .4s;
-
+    
+    --app-icon-wrapper-size : 2em;
     --app-icon-size-primary : 2em;
     --app-icon-size-secondary : 1.2em;
     --app-icon-size-medium : 2.7em;
     --app-icon-wrapper-size-medium : 3em;
+    --app-icon-skew : 40deg;
 
     --app-task-category-color-marketing : #B86EF4; 
     --app-border-none : none;
@@ -42,6 +45,7 @@
     --app-scrollbar-border-radius : 10px;
     
     --app-optional-font-size : 13px; 
+    --app-comment-box-size : 4em;
 }
 
 *{
@@ -54,9 +58,14 @@
 .test{
     background-color: var(--app-layout-test);
 }
+.btn-comment-box{
+    height: var(--app-comment-box-size) ;
+    width: var(--app-comment-box-size);
+}
 
 .component-border{
     border: var(--app-border) !important;
+    border-radius: var(--app-border-radius) !important;
 }
 
 .optional-font{
@@ -90,6 +99,10 @@
     opacity: var(--app-small-font-opacity);
 }
 
+.medium-font-size{
+    font-size: var(--app-optional-font-size);
+}
+
 .icon-wrapper{
     display: flex;
     justify-content: center;
@@ -111,6 +124,11 @@
 .icon-size-medium{
     height: var(--app-icon-size-medium);
     width: var(--app-icon-size-medium);
+}
+
+.icon-skew{
+    -ms-transform: rotate(var(--app-icon-skew)); /* IE 9 */
+    transform: rotate(var(--app-icon-skew));
 }
 
 .icon-size-secondary{
@@ -180,6 +198,10 @@
     border-left: var(--app-border-none) !important;
 }
 
+.outline-none{
+    outline: none;
+}
+
 
 
 .card-header, .card-footer{
@@ -190,12 +212,18 @@
     border-left: 5px solid var(--app-task-category-color-marketing) !important;
 }
 
+textarea:focus{
+    outline: none;
+}
+
 .btn-primary{
     background-color: var(--app-active-background);
-    border: 2px solid black !important;
     border-radius: var(--app-border-radius);
     color: black;
 }
+.btn-primary:focus {
+    box-shadow: none
+  }
 .btn-primary:hover{
     background-color: #FF5733 !important;
     color: white !important;

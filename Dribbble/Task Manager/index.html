@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mt-3 border-top">
+                <div class="card">
                     <div class="card-body">
                         <p class="primary-text text-uppercase">projects</p>
                         <ul class="list-group">
@@ -74,7 +74,7 @@
                             <li class="list-group-item p-0 m-0 secondary-text op-level-8">Development</li>
                         </ul>
                     </div>
-                    <div class="card-footer border-top">
+                    <div class="card-footer">
                         <p class="primary-text text-uppercase">Team</p>
                         <ul class="list-group flex-row">
                             <li class="list-group-item px-0 mx-1"><img src="https://source.unsplash.com/W7b3eDUb_2I" class="rounded-circle user-profile-pic user-profile-pic-size"  alt=""></li>
@@ -131,7 +131,7 @@
                                 <img src="./node_modules/bootstrap-icons/icons/check-circle.svg" alt="">
                             </div>
                             <div class="icon-wrapper rounded-circle ml-3">
-                                <img src="./node_modules/bootstrap-icons/icons/paperclip.svg" alt="">
+                                <img class="icon-skew" src="./node_modules/bootstrap-icons/icons/paperclip.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -148,48 +148,55 @@
                             <task-item></task-item>
                         </div>
                     </div>
-                    <div class="col-7 h-70 overflow-auto border-left">
-                        <div class="card my-4">
-                            <div class="card-header h-10 d-flex justify-content-start align-items-center">
-                                <img class="icon-size mr-4" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
-                                <p class="primary-text my-2">Creating Adword Campaings
-                                </br>
-                                <span class="small-text op-level-5">22 Feb, 2018</span>
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <p class="secondary-text op-level-8 pl-5">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati consequuntur laborum magnam 
-                                    aliquid ad, unde nam, porro nisi incidunt harum iure quidem perspiciatis facilis corrupti voluptatibus 
-                                    debitis quis excepturi quibusdam sed maiores nemo. Aut cupiditate quasi dicta ratione qui 
-                                    quisquam reiciendis voluptates dolor, eveniet rem, non praesentium laboriosam totam?
-                                </p>
-                                <div class="border-top border-bottom  ml-5">
-                                    <ul class="list-group py-2">
-                                        <li class="list-group-item p-0 optional-font">
-                                            <strong class="op-level-7">Olka Nowak</strong> assigned to Natalie Smith. <p class="small-text op-level-8">19th Feb, 2018</p>
-                                        </li>
-                                        <li class="list-group-item p-0 optional-font">
-                                            <strong class="op-level-7">Olka Nowak</strong> added to marketing. <p class="small-text op-level-8">19th Feb, 2018</p>
-                                        </li>
-                                        <li class="list-group-item p-0 optional-font">
-                                            <strong class="op-level-7">Olka Nowak</strong> Created task. <p class="small-text op-level-8">19th Feb, 2018</p>
-                                        </li>
-                                    </ul>
+                    <div class="col-7 border-left d-flex flex-column">
+                        <div class="row h-70 overflow-auto">
+                            <div class="card my-4">
+                                <div class="card-header h-10 d-flex justify-content-start align-items-center">
+                                    <img class="icon-size mr-4" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
+                                    <p class="primary-text my-2">Creating Adword Campaings
+                                    </br>
+                                    <span class="small-text op-level-5">22 Feb, 2018</span>
+                                    </p>
                                 </div>
-                                <div class="border-bottom ml-5 d-flex align-items-center">
-                                    <img class="icon-size-secondary" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
-                                    <p class="primary-text m-2">Natalie completed this task</p>
-                                    <p class="secondary-text m-2 op-level-8">19th Feb, 2018</p>
+                                <div class="card-body">
+                                    <p class="secondary-text op-level-8 pl-5">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto obcaecati consequuntur laborum magnam 
+                                        aliquid ad, unde nam, porro nisi incidunt harum iure quidem perspiciatis facilis corrupti voluptatibus 
+                                        debitis quis excepturi quibusdam sed maiores nemo. Aut cupiditate quasi dicta ratione qui 
+                                        quisquam reiciendis voluptates dolor, eveniet rem, non praesentium laboriosam totam?
+                                    </p>
+                                    <div class="border-top border-bottom  ml-5">
+                                        <ul class="list-group py-2">
+                                            <li class="list-group-item p-0 optional-font">
+                                                <strong class="op-level-7">Olka Nowak</strong> assigned to Natalie Smith. <p class="small-text op-level-8">19th Feb, 2018</p>
+                                            </li>
+                                            <li class="list-group-item p-0 optional-font">
+                                                <strong class="op-level-7">Olka Nowak</strong> added to marketing. <p class="small-text op-level-8">19th Feb, 2018</p>
+                                            </li>
+                                            <li class="list-group-item p-0 optional-font">
+                                                <strong class="op-level-7">Olka Nowak</strong> Created task. <p class="small-text op-level-8">19th Feb, 2018</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-bottom ml-5 d-flex align-items-center">
+                                        <img class="icon-size-secondary" src="./node_modules/bootstrap-icons/icons/check-circle-fill.svg" alt="">
+                                        <p class="primary-text m-2">Natalie completed this task</p>
+                                        <p class="secondary-text m-2 op-level-8">19th Feb, 2018</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer py-2 ml-5 d-flex align-items-center">
+                                    <div class="icon-wrapper icon-wrapper-size-medium align-items-center">
+                                        <img class="icon-size" src="./node_modules/bootstrap-icons/icons/file-earmark-text.svg" alt="">
+                                    </div>
+                                    <p class="primary-text m-2">Article.docx</p>
+                                    <span class="small-text op-level-7">added 26th Feb, 2018</span>
                                 </div>
                             </div>
-                            <div class="card-footer py-2 ml-5 d-flex align-items-center">
-                                <div class="icon-wrapper icon-wrapper-size-medium align-items-center">
-                                    <img class="icon-size" src="./node_modules/bootstrap-icons/icons/file-earmark-text.svg" alt="">
-                                </div>
-                                <p class="primary-text m-2">Article.docx</p>
-                                <span class="small-text op-level-7">added 26th Feb, 2018</span>
-                            </div>
+                        </div>
+                        <div class="row d-flex mt-4 test form-group">
+                            <textarea class="m-1 secondary-text medium-font-size op-level-8 pt-3 pl-3 component-border" rows="2" cols="52" placeholder="Write a comment..."></textarea>
+                            <button class="btn btn-comment-box my-1 mr-1 btn-primary"><img class="icon-size icon-skew" src="./node_modules/bootstrap-icons/icons/paperclip.svg" alt=""></button>
+                            <button class="btn btn-comment-box mr-1 my-1 btn-primary"><img class="icon-size" src="./node_modules/bootstrap-icons/icons/arrow-return-right.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
