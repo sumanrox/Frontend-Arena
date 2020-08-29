@@ -1,6 +1,6 @@
 :root{
     --app-border-radius : 0;
-    --app-border : .5px solid #D3D5E4;
+    --app-border : .5px solid #E5E5EC;
     --app-layout-test : gray;
     --app-profile-pic-size : 70px;
     --app-accent-color : #4E78FE;
@@ -214,6 +214,11 @@
 
 textarea:focus{
     outline: none;
+}
+
+textarea{
+    resize: none;
+    background-color: #E5E5EC;
 }
 
 .btn-primary{
